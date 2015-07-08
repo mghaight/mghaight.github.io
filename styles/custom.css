@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#linkedin {
+	color:#007bb6;
+	margin:.1em;
+}
+
+#linkedin:hover, #linkedin:focus, #linkedin:active {
+	color:white;
+}
+
+#twitter {
+	color:#00aced;
+	margin:.1em;
+}
+
+#twitter:hover, #twitter:focus, #twitter:active {
+	color:white;
+}
+
+#instagram {
+	color:#517fa4;
+	margin:.1em;
+}
+
+#instagram:hover, #instagram:focus, #instagram:active {
+	color:white;
+}
+
+#tumblr {
+	color:#32506d;
+	margin:.1em;
+}
+
+#tumblr:hover, #tumblr:focus, #tumblr:active {
+	color:white;
+}
+
+#cv:hover, #cv:focus, #cv:active {
+	color: white;
+}
+
+#header-text {
+	position:absolute;
+	margin:1em;
+}
+
+.custom-list {
+	margin:auto;
+	width:90%;
+}
