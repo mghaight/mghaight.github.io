@@ -1,0 +1,31 @@
+.header {
+  margin-top: 10%;
+}
+
+.overview {
+  text-align: justify;
+}
+
+.links {
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+.my-link:link, .my-link:visited {
+  color: #222;
+  text-decoration: none;
+  border-bottom: solid 1px #222;
+}
+
+.my-link:hover{
+  color: #222;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.my-link:focus, .my-link:active {
+  color: #222;
+  background-color: rgba(165, 222, 240, 0.6);
+  text-decoration: none;
+  border-bottom: none;
+}
