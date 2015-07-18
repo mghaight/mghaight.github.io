@@ -11,6 +11,10 @@
   text-align: center;
 }
 
+.columns {
+  margin-bottom: 1em;
+}
+
 .my-link:link, .my-link:visited {
   color: #222;
   text-decoration: none;
