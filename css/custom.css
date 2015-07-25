@@ -15,6 +15,11 @@
   margin-bottom: 1em;
 }
 
+.head-link:link, .head-link:visited, .head-link:hover, .head-link:focus, .head-link:active {
+  color: #222;
+  text-decoration: none;
+}
+
 .my-link:link, .my-link:visited {
   color: #222;
   text-decoration: none;
