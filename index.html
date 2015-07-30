@@ -1,60 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
+    <link rel="stylesheet" type="text/css" href="grid.css">
 
-  <meta charset="utf-8">
-  <title>haigmac</title>
-  <meta name="description" content="personal webpage">
-  <meta name="author" content="mackenzie haight">
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:400italic' rel='stylesheet' type='text/css'>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/skeleton.css">
-  <link rel="stylesheet" type="text/css" href="css/custom.css">
-
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-65260540-1', 'auto');
-  ga('send', 'pageview');
-
-  </script>
-
+    <title>haigmac.com</title>
 </head>
+
 <body>
-
-  <div class="container">
-    <section class="header">
-      <h3><a href="http://www.haigmac.com" class="head-link">haigmac</a></h3>
-    </section>
-    <hr>
-    <section class="overview">
-      Haigmac is the personal webpage of Mackenzie Haight. Truncating and rearranging his names in the title is just one example of how Mac is <em>creative</em> and <em>forward thinking</em>. Mac is passionate about building things as long as those things are web applications. At the College of William &amp; Mary, Mac studies Computer Science and competes on the varsity Cross Country and Track &amp; Field teams. Having lived in Virginia all of his life, Mac hopes to travel often after graduation to fit in with the crowd of interesting and cultured twenty-somethings he hangs around. Future destinations include: Portland, OR; Boulder, CO; and London, GBR. Aside from travel, code and running, Mac is interested in visual art especially photography and mixed media. If you see anything here that fills you with joy, sadness, rage or any other emotion please contact Mac <a href="mailto:mghaight@email.wm.edu" class="my-link">here.</a>
-    </section>
-    <hr>
-    <section class="links">
-      <div class="row">
-        <div class="three columns">
-          <a href="https://github.com/mghaight" target="_blank" class="my-link">GitHub</a>
+    <div class="page" id="overview">
+        <h1>haigmac</h1>
+        <hr>
+        <p>Haigmac is the personal webpage of Mackenzie Haight. Truncating and rearranging his names in the title is just one example of how Mac is <em>creative</em> and <em>forward thinking</em>. Mac is passionate about building things as long as those things are web applications. At the College of William &amp; Mary, Mac studies Computer Science and competes on the varsity Cross Country and Track &amp; Field teams. Having lived in Virginia all of his life, Mac hopes to travel often after graduation to fit in with the crowd of interesting and cultured twenty-somethings he hangs around. Future destinations include: Portland, OR; Boulder, CO; and London, GBR. Aside from travel, code and running, Mac is interested in visual art especially photography and mixed media. If you see anything here that fills you with joy, sadness, rage or any other emotion please contact Mac <a href="mailto:mghaight@email.wm.edu">here</a>.</p>
+        <br>
+        <p><a href="#portfolio" onclick="getElementById('portfolio').style.display = 'block'; getElementById('overview').style.display = 'none'">View</a> some of Mac's work.</p>
+        <br>
+        <p>Download his full <a href="#">curriculum vitae</a>.</p>
+    </div>
+    <div class="page" id="portfolio">
+        <h1>Portfolio</h1>
+        <hr>
+        <div class="proj" id="proj-one">
+            <div class="proj-title">PROJECT</div>
+            <div class="proj-des">This is a project</div>
         </div>
-        <div class="three columns">
-          <a href="https://www.linkedin.com/in/mghaight" target="_blank" class="my-link">Linkedin</a>
+        <div class="proj" id="proj-two">
+            <div class="proj-title">PROJECT</div>
+            <div class="proj-des">This is a project</div>
         </div>
-        <div class="three columns">
-          <a href="#" class="my-link">Portfolio</a>
+        <div class="proj" id="proj-three">
+            <div class="proj-title">PROJECT</div>
+            <div class="proj-des">This is a project</div>
         </div>
-        <div class="three columns">
-          <a href="https://medium.com/@haigmac" target="_blank" class="my-link">Medium</a>
-        </div>
-      </div>
-    </section>
-  </div>
-
+        <p>Go <a href="#overview" onclick="getElementById('overview').style.display = 'block'; getElementById('portfolio').style.display = 'none'">back</a>.</p>
+    </div>
+    <div class="footer">
+        <p>Designed and built by Mackenzie Haight</p>
+        <p>Any code here is under the <a href="http://www.gnu.org/licenses/gpl-3.0.en.html">GPL v3</a> license with &lt;3</p>
+        <br>
+        <ul>
+            <li><a href="https://github.com/mghaight" target="_blank">GitHub</a></li>
+            &bull;
+            <li><a href="https://www.linkedin.com/in/mghaight" target="_blank">Linkedin</a></li>
+            &bull;
+            <li><a href="https://medium.com/@haigmac" target="_blank">Medium</a></li>
+            &bull;
+            <li><a href="mailto:mghaight@email.wm.edu">Email</a></li>
+        </ul>
+    </div>
 </body>
+
 </html>
