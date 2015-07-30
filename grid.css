@@ -318,25 +318,23 @@ hr {
 
 /* project elements
 -------------------------------------------------- */
-@media (max-width: 550px) {
-    .proj {
-      margin: 4rem auto;
-      padding: 1rem 2rem;
-      width: 85%;
-      background-color: rgba(153, 153, 153, 0.8);
-    }
-    .proj-title {
-      font-family: 'Old Standard TT', serif;
-      font-style: italic;
-      font-size: 4rem;
-      color: #fff;
-    }
-    .proj-des {
-      text-align: justify;
-    }
+.proj {
+    margin: 4rem auto;
+    padding: 1rem 2rem;
+    width: 85%;
+    background-color: rgba(153, 153, 153, 0.8);
+}
+.proj-title {
+    font-family: 'Old Standard TT', serif;
+    font-style: italic;
+    font-size: 4rem;
+    color: #fff;
+}
+.proj-des {
+    text-align: justify;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 6in) {
     .proj {
         margin: 3rem auto;
         padding: 0;
