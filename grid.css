@@ -39,19 +39,19 @@ body {
 }
 
 .col,.col {
-  width: 100%;
-  float: left;
-  box-sizing: border-box;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
 }
 
 .page:after, .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 #portfolio {
-  display: none;
+    display: none;
 }
 
 /* for devices larger than phablets */
@@ -273,7 +273,7 @@ h6 {
 }
 
 p {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .page p {
@@ -284,25 +284,25 @@ p {
 /* links
 -------------------------------------------------- */
 .page a:link, .page a:visited {
-  color: #222;
-  text-decoration: none;
-  border-bottom: solid 1px #222;
+    color: #222;
+    text-decoration: none;
+    border-bottom: solid 1px #222;
 }
 .page a:hover, .page a:focus, .page a:active {
-  color: #79cee9;
-  text-decoration: none;
-  border-bottom: none;
+    color: #79cee9;
+    text-decoration: none;
+    border-bottom: none;
 }
 
 .footer a:link, .footer a:visited {
-  color: #79cee9;
-  text-decoration: none;
-  border-bottom: none;
+    color: #79cee9;
+    text-decoration: none;
+    border-bottom: none;
 }
 .footer a:hover, .footer a:focus, .footer a:active {
-  color: #999;
-  text-decoration: none;
-  border-bottom: solid 1px #999;
+    color: #999;
+    text-decoration: none;
+    border-bottom: solid 1px #999;
 }
 
 

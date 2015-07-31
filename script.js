@@ -1,0 +1,10 @@
+$(document).ready(function{
+    $(#main-link).click(function{
+        $(#portfolio).show();
+        $(#overview).hide();
+    });
+    $(#port-link).click(function{
+        $(#overview).show();
+        $(#portfolio).hide();
+    });
+});
