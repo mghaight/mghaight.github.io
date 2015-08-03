@@ -1,0 +1,91 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat|Raleway);
+
+/* general styles
+------------------------------------------------ */
+* {
+    margin: 0;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #222;
+}
+@media (max-width: 700px) {
+    body, html {
+        width: 90%;
+    }
+}
+body, html {
+    max-width: 650px;
+    padding: 0;
+    margin: 0 auto;
+    height: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3 {
+    letter-spacing: -.1em;
+}
+h1 {
+    font-size: 4em;
+}
+/* main page styles
+------------------------------------------------ */
+.page {
+    min-height: 100%;
+    position: relative;
+    padding:0;
+    margin: auto;
+    color: #333;
+    text-align: justify;
+}
+header {
+    border-bottom: solid 0.5px #333;
+}
+header h1 {
+    margin: 0 0 0.25em 0;
+}
+.page p {
+    line-height: 1.4em;
+    margin: 1.5em 0 0 0;
+}
+.page a {
+    text-decoration: none;
+}
+.page a:link, .page a:visited {
+    color: #333;
+    border-bottom: solid 1px #333;
+}
+.page a:hover, .page a:focus, .page a:active {
+    color: #79cee9;
+    border-bottom: none;
+}
+
+/* footer styles
+------------------------------------------------ */
+.footer {
+    padding: 40px 0;
+    margin: auto;
+    border-top: solid 0.5px #999;
+    text-align: center;
+    color: #999;
+}
+.footer ul {
+    padding-left: 0;
+}
+.footer li {
+    display: inline;
+    margin: 0 0.5em;
+}
+.footer a {
+    text-decoration: none;
+}
+.footer a:link, .footer a:visited {
+    color: #79cee9;
+}
+.footer a:hover, .footer a:focus, .footer a:active {
+    color: #999;
+    border-bottom: solid 1px #999;
+}
+
+
