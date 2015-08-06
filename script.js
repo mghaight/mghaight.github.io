@@ -1,5 +1,5 @@
 $(document).ready(function(){
     $('#more').click(function() {
-        $('#links').toggleClass('hide');
+        $('#links').fadeToggle(300).toggleClass('hide');
     });
 });
