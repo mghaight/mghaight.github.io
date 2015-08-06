@@ -1,129 +1,45 @@
-/* importing fonts
--------------------------------------------------- */
-@import url(http://fonts.googleapis.com/css?family=Montserrat|Raleway);
-
-
-/* CSS reset
--------------------------------------------------- */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
 body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-
-/* whole page styles
--------------------------------------------------- */
-
-html,body,.page {
-    height: 100%;
-}
-body {
-    width: 85%;
+    background-color: #eee;
+    width: 90%;
     max-width: 650px;
     margin: 0 auto;
-    font-family: 'Raleway', sans-serif;
-    color: #333;
+    margin-top: 10%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.15em;
+    line-height: 1.5;
     text-align: justify;
 }
-@media(min-width: 700px) {
-    body {
-        width: 100%;
-    }
+p {
+    margin-top: 1em;
 }
 
+.em {
+    color: #c60000;
+}
+.mute {
+    color: #777;
+}
 
-/* main section styles
--------------------------------------------------- */
-.spacer {
-    height: 40px;
-}
-header h1 {
-    font-size: 4em;
-    letter-spacing: -0.1em;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0 0 0.25em 0;
-}
-header {
-    border-bottom: solid 0.5px #333;
-}
-.page p {
-    line-height: 1.4em;
-    margin: 1.25em 0;
-}
-.page a {
+.em-link:link, .em-link:visited, .em-link:focus {
+    color: #c60000;
     text-decoration: none;
+    border-bottom: solid 3px #333;
 }
-.page a:link, .page a:visited {
-    color: #333;
-    border-bottom: solid 1px #333;
-}
-.page a:hover, .page a:focus, .page a:active {
-    color: #79cee9;
+.em-link:hover, .em-link:active {
+    color: #79cce9;
     border-bottom: none;
 }
 
+.hide {
+    display: none;
+}
 
-/* footer styles
------------------------------------------------- */
-.footer {
-    padding: 40px 0;
-    border-top: solid 0.5px #999;
-    text-align: center;
-    color: #999;
-    line-height: 1.2em;
+.fa {
+    margin: 1em 0.5em 0.5em;
 }
-.footer ul {
-    padding-left: 0;
+.icon:link, .icon:visited {
+    color: #333;
 }
-.footer li {
-    display: inline;
-    margin: 0 0.5em;
-}
-.footer a {
-    text-decoration: none;
-}
-.footer a:link, .footer a:visited {
-    color: #79cee9;
-}
-.footer a:hover, .footer a:focus, .footer a:active {
-    color: #999;
-    border-bottom: solid 1px #999;
+.icon:hover, .icon:focus, .icon:active {
+    color: #79cce9;
 }
