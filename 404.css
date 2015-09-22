@@ -1,9 +1,0 @@
-a:link, a:visited, a:focus {
-    color: #79cce9;
-    text-decoration: none;
-    border-bottom: none;
-}
-a:hover, a:active {
-    color: #333;
-    border-bottom: solid 3px #c60000;
-}

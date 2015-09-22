@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <!-- basic page needs -->
     <meta charset="utf-8">
     <title>haigmac.com</title>
@@ -12,19 +11,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- font -->
-    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
     <!-- icons -->
     <link href="favicon.ico" rel="icon" type="image/x-icon" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <!-- css -->
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <!-- scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <style type="text/css">
+        body {
+            width: 90%;
+            max-width: 650px;
+            padding-top: 40px;
+            margin: auto;
+            font-family: 'Open Sans', sans-serif;
+        }
+        a:link, a:visited {
+            color: #79cee9;
+            text-decoration: none;
+        }
+        a:hover, a:focus, a:active {
+            color: #37b6de;
+        }
+        #home {
+            font-family: 'Lato', sans-serif;
+            letter-spacing: 0.1rem;
+            text-decoration:none;
+            background-color:black;
+            padding: 5px;
+            color: white;
+            -webkit-transition: -webkit-transform 1s;
+            transition: transform 1s;
+            transition-property: box-shadow;
+        }
+        #home:hover {
+            box-shadow:-5px -5px #FF0000, -10px -10px #ffa500, -15px -15px #ffff00, -20px -20px #009900;
+            -webkit-transition: -webkit-transform .3s;
+            transition: transform .3s;
+            transition-property: box-shadow;
+        }
+        #main_img {
+            width: 100%;
+            max-width: 650px;
+            overflow-x: hidden;
+        }
+        hr {
+            margin-top: 40px;
+            border: 0;
+            background: #000;
+            height: 1px;
+        }
+        #bottom_list li {
+            display: inline;
+            list-style-type: none;
+            padding-right: 20px;
+        }
+        footer {
+            padding-bottom: 40px;
+        }
+    </style>
 
     <!-- analytics -->
     <script>
@@ -37,29 +82,28 @@
     ga('send', 'pageview');
     </script>
 
-
 </head>
 <body>
 
     <!-- primary page layout -->
-    <section>
-        <p>
-            <span class="mute">My name is </span><span class="em">Mackenzie Haight</span><span class="mute"> and I believe in a simpler web. I'm slowly learning about all kinds of </span><span class="em">tech development</span><span class="mute">.</span>
-        </p>
-        <p>
-            <span class="mute">I've got a lot to </span><a href="#" class="em-link" id="more">show</a><span class="mute"> you!</span>
-        </p>
-    </section>
+    <header>
+        <h1><a id="home" href="#">hi, i'm mackenzie</a></h1>
+    </header>
 
-    <section id="links" class="hide">
-        <center>
-            <a href="mailto:mghaight@email.wm.edu" class="icon"><i class="fa fa-envelope fa-2x"></i><span class="caption">Email Me</span></a>
-            <a href="http://www.github.com/mghaight" target="_blank" class="icon"><i class="fa fa-github fa-2x"></i><span class="caption">GitHub</span></a>
-            <a href="resume.html" target="_blank" class="icon"><i class="fa fa-file-text fa-2x"></i><span class="caption">Resum&eacute;</span></a>
-            <a href="https://www.linkedin.com/in/mghaight" target="_blank" class="icon"><i class="fa fa-linkedin-square fa-2x"></i><span class="caption">Linkedin</span></a>
-</a>
-        </center>
-    </section>
+    <img src="pic.jpeg" id="main_img">
+
+    <p>I'm currently studying computer science at the <a href="http://www.wm.edu/as/computerscience/" id="wam" target="_blank">College of William &amp; Mary</a>. I love the web and want to make it better.</p>
+    <p>Contact me about anything creative or even just to grab coffee.</p>
+
+    <hr>
+
+    <footer>
+        <a href="mailto:mghaight@email.wm.edu">Email</a><span style="padding: 5px"></span>
+        <a href="https://github.com/mghaight" target="_blank">GitHub</a><span style="padding: 5px"></span>
+        <a href="https://www.linkedin.com/in/mghaight" target="_blank">LinkedIn</a><span style="padding: 5px"></span>
+        <a href="resume.html" target="_blank">Resum&eacute;</a>
+    </footer>
+
 <!-- end document -->
 </body>
 </html>
