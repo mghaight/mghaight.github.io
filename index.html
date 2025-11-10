@@ -182,7 +182,15 @@
       width: 1rem;
       text-align: center;
     }
+
+    #last-modified {
+      padding-inline-start: 5rem;
+      font-size: smaller;
+      color: var(--faded);
+    }
   </style>
+  <script src="./scripts.js"></script>
+
 
   <title>mackenzie's world</title>
 </head>
@@ -202,9 +210,8 @@
     <nav>
       <h2>links</h2>
       <dl>
-        <dt>cv</dt>
-        <dd><a href="20251018_cv.pdf">20251018_cv.pdf</a></dd>
-        <dt>email</dt>
+        <dt>email
+        </dt>
         <dd><a
             href="mailto:&#109;&#097;&#099;&#107;&#101;&#110;&#122;&#105;&#101;&#046;&#104;&#097;&#105;&#103;&#104;&#116;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#109;&#097;&#099;&#107;&#101;&#110;&#122;&#105;&#101;&#046;&#104;&#097;&#105;&#103;&#104;&#116;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
         </dd>
@@ -212,8 +219,6 @@
         <dd><a href="https://github.com/mghaight" target="_blank">github.com/mghaight</a></dd>
         <dt>orcid</dt>
         <dd><a href="https://orcid.org/0009-0001-9922-5992" target="_blank">orcid.org/0009-0001-9922-5992</a></dd>
-        <dt>now</dt>
-        <dd><a href="#">/now</a></dd>
       </dl>
     </nav>
 
@@ -225,6 +230,10 @@
         <li>open-source software</li>
         <li>oldtime music</li>
       </ul>
+    </section>
+
+    <section id="last-modified">
+      last modified: <span id="last-modified-date"></span>
     </section>
   </main>
 </body>
