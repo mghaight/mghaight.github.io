@@ -1,241 +1,256 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Mackenzie Haight" />
+    <meta
+      name="description"
+      content="Personal and academic website for Mackenzie Haight"
+    />
+    <meta
+      name="keywords"
+      content="Mackenzie Haight, Sanskrit, digitial humanities, religious studies"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="Mackenzie Haight">
-  <meta name="description" content="Personal and academic website for Mackenzie Haight">
-  <meta name="keywords" content="Mackenzie Haight, Sanskrit, digitial humanities, religious studies">
+    <style>
+      @font-face {
+        font-family: "Cabin";
+        src: url("Cabin-Regular.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
 
-  <style>
-    @font-face {
-      font-family: "Cabin";
-      src: url("Cabin-Regular.woff2") format("woff2");
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-    }
+      @font-face {
+        font-family: "Cabin";
+        src: url("Cabin-Bold.woff2") format("woff2");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
 
-    @font-face {
-      font-family: "Cabin";
-      src: url("Cabin-Bold.woff2") format("woff2");
-      font-weight: 700;
-      font-style: normal;
-      font-display: swap;
-    }
+      @font-face {
+        font-family: "Cabin";
+        src: url("Cabin-Italic.woff2") format("woff2");
+        font-weight: 400;
+        font-style: italic;
+        font-display: swap;
+      }
 
-    @font-face {
-      font-family: "Cabin";
-      src: url("Cabin-Italic.woff2") format("woff2");
-      font-weight: 400;
-      font-style: italic;
-      font-display: swap;
-    }
+      @font-face {
+        font-family: "InputMono";
+        src: url("InputMono-Regular.woff") format("woff");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
 
-    @font-face {
-      font-family: "InputMono";
-      src: url("InputMono-Regular.woff") format("woff");
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-    }
+      *,
+      ::before,
+      ::after {
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        color: inherit;
+        font: inherit;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-decoration: inherit;
+      }
 
-    *,
-    ::before,
-    ::after {
-      background-repeat: no-repeat;
-      box-sizing: border-box;
-      color: inherit;
-      font: inherit;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      text-decoration: inherit;
-    }
-
-    html {
-      --fg: #1c1c1c;
-      --bg: #eeeeee;
-      --bg-base: #585858;
-      --faded: #878787;
-      --link: #557c99;
-      --hover: #ff5faf;
-    }
-
-    @media (prefers-color-scheme: dark) {
       html {
-        --fg: #eeeeee;
-        --bg: #1c1c1c;
+        --fg: #1c1c1c;
+        --bg: #eeeeee;
         --bg-base: #585858;
-        --faded: #bcbcbc;
-        --link: #5fafd7;
-        --hover: #af87d7;
-
+        --faded: #878787;
+        --link: #557c99;
+        --hover: #ff5faf;
       }
-    }
 
-    html {
-      color-scheme: light dark;
-      display: flex;
-      justify-content: center;
-      min-height: 100%;
-    }
+      @media (prefers-color-scheme: dark) {
+        html {
+          --fg: #eeeeee;
+          --bg: #1c1c1c;
+          --bg-base: #585858;
+          --faded: #bcbcbc;
+          --link: #5fafd7;
+          --hover: #af87d7;
+        }
+      }
 
-    @media (min-width: 600px) {
       html {
-        background-color: var(--bg-base);
-        padding: 2rem;
-        align-items: center;
+        color-scheme: light dark;
+        display: flex;
+        justify-content: center;
+        min-height: 100%;
       }
-    }
 
-    ::selection {
-      color: #eeeeee;
-      background-color: #0087af;
-    }
+      @media (min-width: 600px) {
+        html {
+          background-color: var(--bg-base);
+          padding: 2rem;
+          align-items: center;
+        }
+      }
 
-    body {
-      font-family: Cabin, sans-serif;
-      padding: 3rem;
-      line-height: 1.5;
-      max-width: 30rem;
-      background-color: var(--bg);
-      color: var(--fg);
-    }
+      ::selection {
+        color: #eeeeee;
+        background-color: #0087af;
+      }
 
-    header {
-      margin-bottom: 1rem;
-      padding-inline-start: 5rem;
-    }
+      body {
+        font-family: Cabin, sans-serif;
+        padding: 3rem;
+        line-height: 1.5;
+        max-width: 45ch;
+        background-color: var(--bg);
+        color: var(--fg);
+      }
 
-    main>p {
-      padding-inline-start: 5rem;
-    }
+      header {
+        margin-bottom: 1rem;
+        padding-inline-start: 5rem;
+      }
 
-    h1,
-    h2 {
-      font-weight: 700;
-    }
+      main > p {
+        padding-inline-start: 5rem;
+      }
 
-    h2 {
-      margin-top: 3rem;
-      margin-bottom: 1rem;
-      padding-inline-start: 5rem;
-    }
+      h1,
+      h2 {
+        font-weight: 700;
+        letter-spacing: 0.05em;
+      }
 
-    em {
-      font-style: italic;
-    }
+      h2 {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        padding-inline-start: 5rem;
+      }
 
-    nav,
-    section {
-      margin-top: 3rem;
-    }
+      em {
+        font-style: italic;
+      }
 
-    nav dl {
-      display: grid;
-      grid-template-columns: 4rem 1fr;
-      column-gap: 1rem;
-      padding-inline-start: 5rem;
-      margin-inline-start: -5rem;
-    }
+      nav,
+      section {
+        margin-top: 3rem;
+      }
 
-    nav dt {
-      color: var(--faded);
-      text-align: right;
-    }
+      nav dl {
+        display: grid;
+        grid-template-columns: 4rem 1fr;
+        column-gap: 1rem;
+        padding-inline-start: 5rem;
+        margin-inline-start: -5rem;
+      }
 
-    nav dd a {
-      font-family: InputMono, monospace;
-      color: var(--link);
-      font-size: 0.9rem;
-    }
+      nav dt {
+        color: var(--faded);
+        text-align: right;
+      }
 
-    a {
-      color: var(--link);
-    }
+      nav dd a {
+        font-family: InputMono, monospace;
+        color: var(--link);
+        font-size: 0.9rem;
+      }
 
-    a:hover {
-      color: var(--hover);
-    }
+      a {
+        color: var(--link);
+      }
 
-    ul {
-      position: relative;
-      padding-inline-start: 5rem;
-    }
+      a:hover {
+        color: var(--hover);
+      }
 
-    ul li {
-      position: relative;
-      margin-top: 0rem;
-    }
+      ul {
+        position: relative;
+        padding-inline-start: 5rem;
+      }
 
-    ul li:first-child {
-      margin-top: 0;
-    }
+      ul li {
+        position: relative;
+        margin-top: 0rem;
+      }
 
-    ul li::before {
-      content: "•";
-      color: var(--faded);
-      position: absolute;
-      left: -1.5rem;
-      width: 1rem;
-      text-align: center;
-    }
+      ul li:first-child {
+        margin-top: 0;
+      }
 
-    #last-modified {
-      padding-inline-start: 5rem;
-      font-size: smaller;
-      color: var(--faded);
-    }
-  </style>
-  <script src="./scripts.js"></script>
+      ul li::before {
+        content: "•";
+        color: var(--faded);
+        position: absolute;
+        left: -1.5rem;
+        width: 1rem;
+        text-align: center;
+      }
 
+      #last-modified {
+        padding-inline-start: 5rem;
+        font-size: smaller;
+        color: var(--faded);
+      }
+    </style>
+    <script src="./scripts.js"></script>
 
-  <title>mackenzie's world</title>
-</head>
+    <title>mackenzie's world</title>
+  </head>
 
-<body>
-  <header>
-    <h1>mackenziehaight.com</h1>
-  </header>
+  <body>
+    <header>
+      <h1>mackenziehaight.com</h1>
+    </header>
 
-  <main>
-    <p>
-      I am a historian of South Asian devotional literature. My research traces the interfacing textual worlds of
-      Kannada, Sanskrit, and Persian across the medieval and early-modern Deccan. The multifaceted discipline of digital
-      humanities is also a special interest of mine.
-    </p>
+    <main>
+      <p>
+        I am a historian of South Asian devotional literature. My research
+        traces the interfacing textual worlds of Kannada, Sanskrit, and Persian
+        across the medieval and early-modern Deccan. The multifaceted discipline
+        of digital humanities is also a special interest of mine.
+      </p>
 
-    <nav>
-      <h2>links</h2>
-      <dl>
-        <dt>email
-        </dt>
-        <dd><a
-            href="mailto:&#109;&#097;&#099;&#107;&#101;&#110;&#122;&#105;&#101;&#046;&#104;&#097;&#105;&#103;&#104;&#116;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#109;&#097;&#099;&#107;&#101;&#110;&#122;&#105;&#101;&#046;&#104;&#097;&#105;&#103;&#104;&#116;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
-        </dd>
-        <dt>github</dt>
-        <dd><a href="https://github.com/mghaight" target="_blank">github.com/mghaight</a></dd>
-        <dt>orcid</dt>
-        <dd><a href="https://orcid.org/0009-0001-9922-5992" target="_blank">orcid.org/0009-0001-9922-5992</a></dd>
-      </dl>
-    </nav>
+      <nav>
+        <h2>links</h2>
+        <dl>
+          <dt>email</dt>
+          <dd>
+            <a
+              href="mailto:&#109;&#097;&#099;&#107;&#101;&#110;&#122;&#105;&#101;&#046;&#104;&#097;&#105;&#103;&#104;&#116;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"
+              >&#109;&#097;&#099;&#107;&#101;&#110;&#122;&#105;&#101;&#046;&#104;&#097;&#105;&#103;&#104;&#116;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a
+            >
+          </dd>
+          <dt>github</dt>
+          <dd>
+            <a href="https://github.com/mghaight" target="_blank"
+              >github.com/mghaight</a
+            >
+          </dd>
+          <dt>orcid</dt>
+          <dd>
+            <a href="https://orcid.org/0009-0001-9922-5992" target="_blank"
+              >orcid.org/0009-0001-9922-5992</a
+            >
+          </dd>
+        </dl>
+      </nav>
 
-    <section>
-      <h2>other interests</h2>
-      <ul>
-        <li>cats</li>
-        <li>quilting</li>
-        <li>open-source software</li>
-        <li>oldtime music</li>
-      </ul>
-    </section>
+      <section>
+        <h2>other interests</h2>
+        <ul>
+          <li>cats</li>
+          <li>quilting</li>
+          <li>typography</li>
+          <li>open-source software</li>
+          <li>oldtime music</li>
+        </ul>
+      </section>
 
-    <section id="last-modified">
-      last modified: <span id="last-modified-date"></span>
-    </section>
-  </main>
-</body>
-
+      <section id="last-modified">
+        last modified: <span id="last-modified-date"></span>
+      </section>
+    </main>
+  </body>
 </html>
